@@ -12,47 +12,6 @@ class EventFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $event = new Event();
-        $event->setName('Git et GitHub pour débutants');
-        $event->setResume('You\'ve heard about Git and GitHub and you know that\'s a hot topic right now for developers? If you\'d like to finally know what\'s a commit, a push or a conflict, this workshop is made for you!');
-        $event->setCity('Bruxelles');
-        $event->setCategory('Développement web');
-        $event->setLink('https://www.eventbrite.com/e/free-workshop-git-and-github-for-beginners-tickets-160403008717#');
-        $event->setDate(new \DateTime('2021-06-28 16:15'));
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('L\'intelligence Artificielle dans le secteur du Vin/ WINESPACE');
-        $event->setResume('Winespace, Start-up Bordelaise combinant expertise du vin et Intelligence Artificielle, viendra vous partager ses travaux : comment le TAL (Traitement Automatique des Langues) et l’IA (Intelligence Artificielle) peuvent aider le monde du vin ?
-        Elle vous présentera « Tastee », son Intelligence Artificielle capable de comprendre des commentaires de dégustation de vin, dans le but d’extraire et de quantifier l’ensemble des caractéristiques organoleptiques décrites dans chaque commentaire.');
-        $event->setCity('Bordeaux');
-        $event->setCategory('Développement web');
-        $event->setLink('https://www.eventbrite.fr/e/talk-lintelligence-artificielle-dans-le-secteur-du-vin-w-winespace-tickets-158606280655#');
-        $event->setDate(new \DateTime('2021-06-28 16:30'));
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('Penser comme un développeur web');
-        $event->setResume('Vous souhaitez vous initier au Développement Web ? Participez à notre atelier "Penser comme un développeur web" animé par Louis, co-fondateur du Wagon Nice. Essentielle pour tester son product/market-fit, la Landing Page permet de présenter son produit, d’attirer des leads et, en plus, de collecter des données. En apprenant les bases de la programmation et quelques astuces de développeurs, vous saurez construire une page web en peu de temps. De Sublime Text aux premiers sélecteurs CSS en passant par le markup HTML, vous saurez réaliser rapidement votre site en utilisant les mêmes outils que des pros (Bootstrap, FontAwesome, Google Fonts, Colorzilla, etc.).');
-        $event->setCity('Nice');
-        $event->setCategory('Développement web');
-        $event->setLink('https://www.eventbrite.fr/e/workshop-l-penser-comme-un-developpeur-web-tickets-159467628971');
-        $event->setDate(new \DateTime('2021-06-29 12:30'));
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('Explorez la data comme un data analyst');
-        $event->setResume('Vous souhaitez vous initier à la Data Science ? Participez à notre workshop "Explorer la Data comme un Data Analyst" animé par Louis, co-fondateur du Wagon Nice. Dans cet atelier, vous utiliserez Python, BeautifulSoup et Jupyter afin de vous montrer les bases du web scraping pas à pas. Une certaine expérience avec Python sera utile, mais n\'est pas nécessaire - les concepts de programmation seront expliqués de manière pratique et accessible.');
-        $event->setCity('Nice');
-        $event->setCategory('Data');
-        $event->setLink('https://www.eventbrite.fr/e/workshop-l-explorez-la-data-comme-un-data-analyst-tickets-159478200591');
-        $event->setDate(new \DateTime('2021-06-29 17:00'));
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
         $event->setName('CARRIÈRES DANS LA TECH : DÉVELOPPEUR WEB');
         $event->setResume('Comme vous le savez, la technologie est partout et c\'est l\'un des secteurs les plus prometteurs, avec une demande d\'emploi en constante augmentation ! Les sites web et les applications mobiles sont en constante évolution, et les entreprises ont besoin d\'embaucher les meilleurs profils tech. Développeur web, Product Owner, UX Designer... chacun de ces métiers a des défis spécifiques ! Tous ces métiers sont possibles après le bootcamp, lequel est fait pour vous ?');
         $event->setCity('Casablanca');
@@ -321,16 +280,6 @@ class EventFixtures extends Fixture
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://hackinparis.com/');
         $event->setDate(new \DateTime('2021-11-15 09:00'));
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('Sommet Virtuel Cybersécurité 23 juin 2021');
-        $event->setResume('Les cyberattaques sont devenues un enjeu majeur pour les entreprises. L’année qui vient de s’écouler nous l’a bien confirmé ; des multinationales aux PME-PMI en passant par les institutions publiques et les établissements de santé, nulle organisation n’est à l’abri des cybercriminels dont les attaques ne cessent d’augmenter et de se complexifier.');
-        $event->setCity('Paris');
-        $event->setCategory('Cyber-sécurité');
-        $event->setLink('https://www.cloudsecurityexpo.fr/virtuel');
-        $event->setDate(new \DateTime('2021-06-23 09:00'));
         $manager->persist($event);
         $manager->flush();
 
