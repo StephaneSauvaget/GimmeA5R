@@ -12,49 +12,12 @@ class EventFixtures extends Fixture
     public function load(ObjectManager $manager)
     {
         $event = new Event();
-        $event->setName('Git et GitHub pour débutants');
-        $event->setResume('You\'ve heard about Git and GitHub and you know that\'s a hot topic right now for developers? If you\'d like to finally know what\'s a commit, a push or a conflict, this workshop is made for you!');
-        $event->setCity('Bruxelles');
-        $event->setCategory('Développement web');
-        $event->setLink('https://www.eventbrite.com/e/free-workshop-git-and-github-for-beginners-tickets-160403008717#');
-        $event->setDate(new \DateTime('2011-01-01 15:00'));
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('L\'intelligence Artificielle dans le secteur du Vin/ WINESPACE');
-        $event->setResume('Winespace, Start-up Bordelaise combinant expertise du vin et Intelligence Artificielle, viendra vous partager ses travaux : comment le TAL (Traitement Automatique des Langues) et l’IA (Intelligence Artificielle) peuvent aider le monde du vin ?
-        Elle vous présentera « Tastee », son Intelligence Artificielle capable de comprendre des commentaires de dégustation de vin, dans le but d’extraire et de quantifier l’ensemble des caractéristiques organoleptiques décrites dans chaque commentaire.');
-        $event->setCity('Bordeaux');
-        $event->setCategory('Développement web');
-        $event->setLink('https://www.eventbrite.fr/e/talk-lintelligence-artificielle-dans-le-secteur-du-vin-w-winespace-tickets-158606280655#');
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('Penser comme un développeur web');
-        $event->setResume('Vous souhaitez vous initier au Développement Web ? Participez à notre atelier "Penser comme un développeur web" animé par Louis, co-fondateur du Wagon Nice. Essentielle pour tester son product/market-fit, la Landing Page permet de présenter son produit, d’attirer des leads et, en plus, de collecter des données. En apprenant les bases de la programmation et quelques astuces de développeurs, vous saurez construire une page web en peu de temps. De Sublime Text aux premiers sélecteurs CSS en passant par le markup HTML, vous saurez réaliser rapidement votre site en utilisant les mêmes outils que des pros (Bootstrap, FontAwesome, Google Fonts, Colorzilla, etc.).');
-        $event->setCity('Nice');
-        $event->setCategory('Développement web');
-        $event->setLink('https://www.eventbrite.fr/e/workshop-l-penser-comme-un-developpeur-web-tickets-159467628971');
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('Explorez la data comme un data analyst');
-        $event->setResume('Vous souhaitez vous initier à la Data Science ? Participez à notre workshop "Explorer la Data comme un Data Analyst" animé par Louis, co-fondateur du Wagon Nice. Dans cet atelier, vous utiliserez Python, BeautifulSoup et Jupyter afin de vous montrer les bases du web scraping pas à pas. Une certaine expérience avec Python sera utile, mais n\'est pas nécessaire - les concepts de programmation seront expliqués de manière pratique et accessible.');
-        $event->setCity('Nice');
-        $event->setCategory('Data');
-        $event->setLink('https://www.eventbrite.fr/e/workshop-l-explorez-la-data-comme-un-data-analyst-tickets-159478200591');
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
         $event->setName('CARRIÈRES DANS LA TECH : DÉVELOPPEUR WEB');
         $event->setResume('Comme vous le savez, la technologie est partout et c\'est l\'un des secteurs les plus prometteurs, avec une demande d\'emploi en constante augmentation ! Les sites web et les applications mobiles sont en constante évolution, et les entreprises ont besoin d\'embaucher les meilleurs profils tech. Développeur web, Product Owner, UX Designer... chacun de ces métiers a des défis spécifiques ! Tous ces métiers sont possibles après le bootcamp, lequel est fait pour vous ?');
         $event->setCity('Casablanca');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/inscription-careers-in-tech-web-developer-160930799353');
+        $event->setDate(new \DateTime('2021-06-30 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -64,6 +27,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131171/');
+        $event->setDate(new \DateTime('2021-07-06 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -73,6 +37,7 @@ class EventFixtures extends Fixture
         $event->setCity('Casablanca');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/careers-in-tech-product-owner-tickets-161197178099');
+        $event->setDate(new \DateTime('2021-06-30 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -85,6 +50,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/free-workshop-product-design-sprint-tickets-159499251555');
+        $event->setDate(new \DateTime('2021-07-12 18:15'));
         $manager->persist($event);
         $manager->flush();
 
@@ -97,6 +63,7 @@ class EventFixtures extends Fixture
         $event->setCity('Barcelona');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.es/e/product-design-sprint-tickets-159638630441');
+        $event->setDate(new \DateTime('2021-07-13 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -106,6 +73,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131259/');
+        $event->setDate(new \DateTime('2021-07-13 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -115,6 +83,7 @@ class EventFixtures extends Fixture
         $event->setCity('Melbourne');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com.au/e/javascript-for-beginners-tickets-161431039585');
+        $event->setDate(new \DateTime('2021-07-14 10:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -125,6 +94,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131287/');
+        $event->setDate(new \DateTime('2021-07-20 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -134,6 +104,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131325/');
+        $event->setDate(new \DateTime('2021-08-03 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -143,6 +114,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.lereacteur.io/evenements/inscription/');
+        $event->setDate(new \DateTime('2021-07-07 18:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -152,6 +124,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/building-the-new-web-paris-2nd-edition-tickets-88181710871?aff=ebdssbdestsearch&keep_tld=1');
+        $event->setDate(new \DateTime('2021-12-08 12:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -161,6 +134,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/billets-webacademie-journee-portes-ouvertes-jeudi-8-juillet-2021-160968215265?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-08 14:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -170,6 +144,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/billets-rex-vivatech-au-village-by-ca-paris-159089616325?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-05 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -182,6 +157,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://www.eventbrite.fr/e/billets-introduction-to-technology-trends-161098005471?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-27 19:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -192,6 +168,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/billets-growth-cafe-digital-workplace-la-cle-pour-travailler-efficacement-159906967043?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-02 08:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -201,6 +178,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.blogdumoderateur.com/evenements/google-for-games-developer-summit/');
+        $event->setDate(new \DateTime('2021-07-12 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -210,6 +188,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://www.boddigitalbroadcast.com/festival/home?utm_term=data%20science%20conference&utm_campaign=0761+BoD+Festival+2021+-+Search+EU&utm_source=adwords&utm_medium=ppc&hsa_ad=522935677673&hsa_cam=13176697814&hsa_ver=3&hsa_net=adwords&hsa_acc=7120177801&hsa_mt=p&hsa_kw=data%20science%20conference&hsa_tgt=kwd-298322623183&hsa_src=g&hsa_grp=128231338731&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLKYZJI6W7vR1t2bkVG1JfM225pL2xUyFVSaqUtOLliem5HIEVieltkaAnpSEALw_wcB');
+        $event->setDate(new \DateTime('2021-07-20 00:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -219,6 +198,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.eventbrite.fr/e/federated-learning-workshop-registration-159467364179?aff=ebdssbdestsearch&keep_tld=1');
+        $event->setDate(new \DateTime('2021-09-16 09:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -228,6 +208,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://www.scipy2021.scipy.org/');
+        $event->setDate(new \DateTime('2021-07-12 14:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -238,6 +219,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://ep2021.europython.eu/');
+        $event->setDate(new \DateTime('2021-07-26 14:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -247,6 +229,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.bigdataparis.com/');
+        $event->setDate(new \DateTime('2021-09-28 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -256,6 +239,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://www.kdd.org/kdd2021/');
+        $event->setDate(new \DateTime('2021-08-14 12:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -265,6 +249,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://neurips.cc/');
+        $event->setDate(new \DateTime('2021-12-06 08:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -274,6 +259,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.universite-paris-saclay.fr/evenements/dataia-day-1st-data-science-intelligence-society-conference');
+        $event->setDate(new \DateTime('2022-03-05 09:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -283,6 +269,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.bigdataworld.fr/');
+        $event->setDate(new \DateTime('2021-06-30 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -292,15 +279,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://hackinparis.com/');
-        $manager->persist($event);
-        $manager->flush();
-
-        $event = new Event();
-        $event->setName('Sommet Virtuel Cybersécurité 23 juin 2021');
-        $event->setResume('Les cyberattaques sont devenues un enjeu majeur pour les entreprises. L’année qui vient de s’écouler nous l’a bien confirmé ; des multinationales aux PME-PMI en passant par les institutions publiques et les établissements de santé, nulle organisation n’est à l’abri des cybercriminels dont les attaques ne cessent d’augmenter et de se complexifier.');
-        $event->setCity('Paris');
-        $event->setCategory('Cyber-sécurité');
-        $event->setLink('https://www.cloudsecurityexpo.fr/virtuel');
+        $event->setDate(new \DateTime('2021-11-15 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -314,6 +293,7 @@ class EventFixtures extends Fixture
         $event->setCity('Toulouse');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://cbc-convention.com/');
+        $event->setDate(new \DateTime('2021-11-23 09:00'));
         $manager->persist($event);
         $manager->flush();
     }
