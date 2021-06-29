@@ -29,13 +29,26 @@
                 <div class="user-header">
                     <img src="{{ asset('images/logo_white_large.png') }}">
                     <div class="user-header__link">
-                        <a href="#">Accueil</a>
+                        <a href="https://www.fiverr.com/">Accueil</a>
                     </div>
-                    <div class="tchat"></div>
+                    <div class="user-header__link">
+                        <a href="{{ path("user") }}" class="event">Events</a>
+                    </div>
+                    <div class="tchat">
+                        <button class="dropdown-button">
+                        <a href="{{ path('messages') }}"class="messagerie">Messagerie</a>
+                        <i></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Mes dossiers</a>
+                            <a href="{{ path("received") }}">Boîte de réception</a>
+                            <a href="{{ path("sent") }}">Eléments envoyés</a>
+                        </div>
+                    </div>
                 </div>
             {% endif %}
             {% if app.user %}
-                <a href="{{ path('messages') }}">Messagerie</a>
+                
                 <a id="logout-link" href="{{ path('app_logout') }}"> Se déconnecter</a>
             {% endif %}
         {% endblock %}
