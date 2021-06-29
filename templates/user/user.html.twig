@@ -1,13 +1,21 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-
+    <div class="flex-event-container">
+        <div class="event-form">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <input type="submit" value="Valider">
+    {{ form_end(form) }}
+        </div>
+        <div>
     {% for event in events %}
         <h2>{{ event.name }}</h2>
         <p>{{ event.date | format_datetime('full', 'short', locale='fr') }}</p>
         <h3>{{ event.city }}</h3>
         <p>{{ event.resume }}</p>
         <a href="{{ event.link }}" target="blank">Jeter un coup d'oeil</a>
+
     {% endfor %}
 
 {% endblock %}
