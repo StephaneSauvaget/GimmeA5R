@@ -17,7 +17,7 @@ class EventFixtures extends Fixture
         $event->setCity('Bruxelles');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/free-workshop-git-and-github-for-beginners-tickets-160403008717#');
-        $event->setDate(new \DateTime('2011-01-01 15:00'));
+        $event->setDate(new \DateTime('2021-06-28 16:15'));
         $manager->persist($event);
         $manager->flush();
 
@@ -28,6 +28,7 @@ class EventFixtures extends Fixture
         $event->setCity('Bordeaux');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/talk-lintelligence-artificielle-dans-le-secteur-du-vin-w-winespace-tickets-158606280655#');
+        $event->setDate(new \DateTime('2021-06-28 16:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -37,6 +38,7 @@ class EventFixtures extends Fixture
         $event->setCity('Nice');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/workshop-l-penser-comme-un-developpeur-web-tickets-159467628971');
+        $event->setDate(new \DateTime('2021-06-29 12:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -46,6 +48,7 @@ class EventFixtures extends Fixture
         $event->setCity('Nice');
         $event->setCategory('Data');
         $event->setLink('https://www.eventbrite.fr/e/workshop-l-explorez-la-data-comme-un-data-analyst-tickets-159478200591');
+        $event->setDate(new \DateTime('2021-06-29 17:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -55,6 +58,7 @@ class EventFixtures extends Fixture
         $event->setCity('Casablanca');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/inscription-careers-in-tech-web-developer-160930799353');
+        $event->setDate(new \DateTime('2021-06-30 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -64,6 +68,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131171/');
+        $event->setDate(new \DateTime('2021-07-06 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -73,6 +78,7 @@ class EventFixtures extends Fixture
         $event->setCity('Casablanca');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/careers-in-tech-product-owner-tickets-161197178099');
+        $event->setDate(new \DateTime('2021-06-30 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -85,6 +91,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com/e/free-workshop-product-design-sprint-tickets-159499251555');
+        $event->setDate(new \DateTime('2021-07-12 18:15'));
         $manager->persist($event);
         $manager->flush();
 
@@ -97,6 +104,7 @@ class EventFixtures extends Fixture
         $event->setCity('Barcelona');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.es/e/product-design-sprint-tickets-159638630441');
+        $event->setDate(new \DateTime('2021-07-13 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -106,6 +114,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131259/');
+        $event->setDate(new \DateTime('2021-07-13 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -115,6 +124,7 @@ class EventFixtures extends Fixture
         $event->setCity('Melbourne');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.com.au/e/javascript-for-beginners-tickets-161431039585');
+        $event->setDate(new \DateTime('2021-07-14 10:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -125,6 +135,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131287/');
+        $event->setDate(new \DateTime('2021-07-20 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -134,6 +145,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Bootcamp/events/279131325/');
+        $event->setDate(new \DateTime('2021-08-03 19:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -143,6 +155,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.lereacteur.io/evenements/inscription/');
+        $event->setDate(new \DateTime('2021-07-07 18:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -152,6 +165,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/building-the-new-web-paris-2nd-edition-tickets-88181710871?aff=ebdssbdestsearch&keep_tld=1');
+        $event->setDate(new \DateTime('2021-12-08 12:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -161,6 +175,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/billets-webacademie-journee-portes-ouvertes-jeudi-8-juillet-2021-160968215265?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-08 14:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -170,6 +185,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/billets-rex-vivatech-au-village-by-ca-paris-159089616325?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-05 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -182,6 +198,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://www.eventbrite.fr/e/billets-introduction-to-technology-trends-161098005471?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-27 19:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -192,6 +209,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Développement web');
         $event->setLink('https://www.eventbrite.fr/e/billets-growth-cafe-digital-workplace-la-cle-pour-travailler-efficacement-159906967043?aff=ebdssbdestsearch');
+        $event->setDate(new \DateTime('2021-07-02 08:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -201,6 +219,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Développement web');
         $event->setLink('https://www.blogdumoderateur.com/evenements/google-for-games-developer-summit/');
+        $event->setDate(new \DateTime('2021-07-12 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -210,6 +229,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://www.boddigitalbroadcast.com/festival/home?utm_term=data%20science%20conference&utm_campaign=0761+BoD+Festival+2021+-+Search+EU&utm_source=adwords&utm_medium=ppc&hsa_ad=522935677673&hsa_cam=13176697814&hsa_ver=3&hsa_net=adwords&hsa_acc=7120177801&hsa_mt=p&hsa_kw=data%20science%20conference&hsa_tgt=kwd-298322623183&hsa_src=g&hsa_grp=128231338731&gclid=Cj0KCQjw5uWGBhCTARIsAL70sLKYZJI6W7vR1t2bkVG1JfM225pL2xUyFVSaqUtOLliem5HIEVieltkaAnpSEALw_wcB');
+        $event->setDate(new \DateTime('2021-07-20 00:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -219,6 +239,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.eventbrite.fr/e/federated-learning-workshop-registration-159467364179?aff=ebdssbdestsearch&keep_tld=1');
+        $event->setDate(new \DateTime('2021-09-16 09:30'));
         $manager->persist($event);
         $manager->flush();
 
