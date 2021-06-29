@@ -19,13 +19,16 @@
         {% endblock %}
     </head>
     <body>
-        {% for message in app.flashes("message") %}
+        {% block header %}
+            {% if app.user %}
+                <a href="{{ path('messages') }}">Messagerie</a>
+                <a id="logout-link" href="{{ path('app_logout') }}"> Se déconnecter</a>
+            {% endif %}
+        {% endblock %}
+        {% block body %}
+             {% for message in app.flashes("message") %}
         {{ message }}
         {% endfor %}
-        {% block body %}
-            {% if app.user %}
-    				<a id="logout-link" href="{{ path('app_logout') }}"> Se déconnecter</a>
-				{% endif %}
         {% endblock %}
     </body>
 </html>

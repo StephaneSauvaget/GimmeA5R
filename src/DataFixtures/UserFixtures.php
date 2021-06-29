@@ -28,5 +28,35 @@ class UserFixtures extends Fixture
         ));
         $manager->persist($user);
         $manager->flush();
+
+        $user = new User;
+        $user->setNickname('ice');
+        $user->setRoles(["ROLE_USER"]);
+        $user->setPassword($this->passwordHasher->hashPassword(
+            $user,
+            'ice'
+        ));
+        $manager->persist($user);
+        $manager->flush();
+
+        $user = new User;
+        $user->setNickname('ced');
+        $user->setRoles(["ROLE_USER"]);
+        $user->setPassword($this->passwordHasher->hashPassword(
+            $user,
+            'ced'
+        ));
+        $manager->persist($user);
+        $manager->flush();
+
+        $user = new User;
+        $user->setNickname('rno');
+        $user->setRoles(["ROLE_USER"]);
+        $user->setPassword($this->passwordHasher->hashPassword(
+            $user,
+            'rno'
+        ));
+        $manager->persist($user);
+        $manager->flush();
     }
 }
