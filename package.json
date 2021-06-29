@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "axios": "^0.21.1",
+        "simple-peer": "^9.11.0",
         "twilio-video": "^2.15.1",
         "util": "^0.12.4"
     }
