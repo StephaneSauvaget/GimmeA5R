@@ -555,9 +555,6 @@
     "twig/twig": {
         "version": "v3.3.2"
     },
-    "twilio/sdk": {
-        "version": "6.25.0"
-    },
     "webmozart/assert": {
         "version": "1.10.0"
     }
