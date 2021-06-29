@@ -228,6 +228,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://www.scipy2021.scipy.org/');
+        $event->setDate(new \DateTime('2021-07-12 14:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -238,6 +239,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://ep2021.europython.eu/');
+        $event->setDate(new \DateTime('2021-07-26 14:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -247,6 +249,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.bigdataparis.com/');
+        $event->setDate(new \DateTime('2021-09-28 18:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -256,6 +259,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://www.kdd.org/kdd2021/');
+        $event->setDate(new \DateTime('2021-08-14 12:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -265,6 +269,7 @@ class EventFixtures extends Fixture
         $event->setCity('Online');
         $event->setCategory('Data');
         $event->setLink('https://neurips.cc/');
+        $event->setDate(new \DateTime('2021-12-06 08:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -274,6 +279,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.universite-paris-saclay.fr/evenements/dataia-day-1st-data-science-intelligence-society-conference');
+        $event->setDate(new \DateTime('2022-03-05 09:30'));
         $manager->persist($event);
         $manager->flush();
 
@@ -283,6 +289,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Data');
         $event->setLink('https://www.bigdataworld.fr/');
+        $event->setDate(new \DateTime('2021-06-30 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -292,6 +299,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://hackinparis.com/');
+        $event->setDate(new \DateTime('2021-11-15 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -301,6 +309,7 @@ class EventFixtures extends Fixture
         $event->setCity('Paris');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://www.cloudsecurityexpo.fr/virtuel');
+        $event->setDate(new \DateTime('2021-06-23 09:00'));
         $manager->persist($event);
         $manager->flush();
 
@@ -314,6 +323,7 @@ class EventFixtures extends Fixture
         $event->setCity('Toulouse');
         $event->setCategory('Cyber-sécurité');
         $event->setLink('https://cbc-convention.com/');
+        $event->setDate(new \DateTime('2021-11-23 09:00'));
         $manager->persist($event);
         $manager->flush();
     }
