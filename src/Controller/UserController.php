@@ -18,7 +18,7 @@ class UserController extends AbstractController
     {
         $events = $eventRepository->findBy(
             [],
-            ['date' => 'DESC']
+            ['date' => 'ASC']
         );
         return $this->render('user/user.html.twig', [
             'events' => $events
