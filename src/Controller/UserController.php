@@ -16,8 +16,12 @@ class UserController extends AbstractController
      */
     public function index(EventRepository $eventRepository): Response
     {
+        $events = $eventRepository->findBy(
+            [],
+            ['date' => 'DESC']
+        );
         return $this->render('user/user.html.twig', [
-            'events' => $eventRepository->findAll()
+            'events' => $events
         ]);
     }
 }
