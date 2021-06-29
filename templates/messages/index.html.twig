@@ -3,6 +3,7 @@
 {% block title %}Messagerie{% endblock %}
 
 {% block body %}
+<a class ="button-send-message" href="{{ path("send") }}">Envoyer un message</a>
         <section class="container">
             <div class="row">
                 <div class ="col">
@@ -10,29 +11,7 @@
                     <p>Résumé de la messagerie</p>
                     <p>Reçus :{{ app.user.received|length }}</p>
                     <p>Envoyés :{{ app.user.sent|length }}</p>
-                    <a class="btn btn-success" data-bs-toggle="offcanvas"
-                    href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Voir mes dossiers</a>
-                    <a class ="btn btn-success" href="{{ path("send") }}">Envoyer un message</a>
                 </div>
             </div>
         </section>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                    <h2 class="offcanvas-title" id="offcanvasExampleLabel">Mes dossiers</h2>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-            <div class="offcanvas-body">
-            <div class="list-group">
-                <a href="{{ path("messages") }}" class="list-group-item
-                lit-group-item-action active-success">Accueil</a>
-            </div>
-                        <div class="list-group">
-                <a href="{{ path("received") }}" class="list-group-item
-                lit-group-item-action ">Boîte de réception</a>
-            </div>
-                        <div class="list-group">
-                <a href="{{ path("sent") }}" class="list-group-item
-                lit-group-item-action ">Eléments envoyés</a>
-            </div>
-
 {% endblock %}
