@@ -3,7 +3,7 @@
 {% block body %}
 
     {% for event in events %}
-        <h2>{{ loop.index }}{{ event.name }}</h2>
+        <h2>{{ event.name }}</h2>
         <p>{{ event.date | format_datetime('full', 'short', locale='fr') }}</p>
         <h3>{{ event.city }}</h3>
         <p>{{ event.resume }}</p>
