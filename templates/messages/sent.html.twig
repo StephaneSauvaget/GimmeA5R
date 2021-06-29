@@ -1,4 +1,6 @@
 {% extends "base.html.twig" %}
+{% block flash %}
+{% endblock %}
 {% block body %}
 <section class="container">
     <div class="row">
@@ -28,6 +30,7 @@
             </svg>
             </a>
         </div>
+        {% endfor %}
         <div>
           <a class="btn btn-success" data-bs-toggle="offcanvas"
                     href="#offcanvasExample" role="button" aria-controls="offcanvasExample">Voir mes dossiers</a>
@@ -51,6 +54,4 @@
                 <a href="{{ path("sent") }}" class="list-group-item
                 lit-group-item-action ">Eléments envoyés</a>
             </div>
-            
-        {% endfor %}
 {% endblock %}
