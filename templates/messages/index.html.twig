@@ -3,15 +3,20 @@
 {% block title %}Messagerie{% endblock %}
 
 {% block body %}
-<a class ="button-send-message" href="{{ path("send") }}">Envoyer un message</a>
-        <section class="container">
-            <div class="row">
-                <div class ="col">
+        <section class="body-message">
                     <h1>Messagerie</h1>
                     <p>Résumé de la messagerie</p>
                     <p>Reçus :{{ app.user.received|length }}</p>
                     <p>Envoyés :{{ app.user.sent|length }}</p>
                 </div>
-            </div>
         </section>
+                <div>
+                    <a class ="button-send-message" href="{{ path("received") }}">Boîte de réception</a>
+                </div>
+                <div>
+                    <a class ="button-send-message" href="{{ path("sent") }}">Eléments envoyés</a>
+                </div>
+                <div>
+                    <a class ="button-send-message" href="{{ path("send") }}">Envoyer un message</a>
+                </div>
 {% endblock %}
