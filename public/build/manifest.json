@@ -2,9 +2,5 @@
   "build/app.css": "/build/app.css",
   "build/app.js": "/build/app.js",
   "build/runtime.js": "/build/runtime.js",
-  "build/vendors-node_modules_core-js_modules_es_array-buffer_constructor_js-node_modules_core-js_modu-7c6abe.js": "/build/vendors-node_modules_core-js_modules_es_array-buffer_constructor_js-node_modules_core-js_modu-7c6abe.js",
-  "build/vendors-node_modules_core-js_modules_es_array-buffer_constructor_js-node_modules_core-js_modu-60a0c0.js": "/build/vendors-node_modules_core-js_modules_es_array-buffer_constructor_js-node_modules_core-js_modu-60a0c0.js",
-  "build/vendors-node_modules_simple-peer_index_js-node_modules_wrtc_lib_browser_js.js": "/build/vendors-node_modules_simple-peer_index_js-node_modules_wrtc_lib_browser_js.js",
-  "build/vendors-node_modules_simple-peer_simplepeer_min_js-node_modules_wrtc_scripts_download-prebuilt_js.js": "/build/vendors-node_modules_simple-peer_simplepeer_min_js-node_modules_wrtc_scripts_download-prebuilt_js.js",
-  "build/vendors-node_modules_simple-peer_simplepeer_min_js.js": "/build/vendors-node_modules_simple-peer_simplepeer_min_js.js"
+  "build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js": "/build/vendors-node_modules_symfony_stimulus-bridge_dist_index_js-node_modules_core-js_modules_es_ob-7db861.js"
 }
