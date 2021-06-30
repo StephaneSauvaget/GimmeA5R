@@ -16,22 +16,20 @@ class EventType extends AbstractType
             ->add('city', ChoiceType::class, [
                 'choices' => [
                     "Barcelona" => Event::LOCATIONS[0],
-                    "Bordeaux" => Event::LOCATIONS[1],
-                    "Bruxelles" => Event::LOCATIONS[2],
-                    "Casablanca" => Event::LOCATIONS[3],
-                    "Melbourne" => Event::LOCATIONS[4],
-                    "Nice" => Event::LOCATIONS[5],
-                    "Online" => Event::LOCATIONS[6],
-                    "Paris" => Event::LOCATIONS[7],
-                    "Toulouse" => Event::LOCATIONS[8],
-                ]
+                    "Casablanca" => Event::LOCATIONS[1],
+                    "Melbourne" => Event::LOCATIONS[2],
+                    "Online" => Event::LOCATIONS[3],
+                    "Paris" => Event::LOCATIONS[4],
+                    "Toulouse" => Event::LOCATIONS[5],
+                ],
             ])
             ->add('category', ChoiceType::class, [
                 'choices' => [
                     "Cyber-sécurité" => Event::CATEGORIES[0],
                     "Data" => Event::CATEGORIES[1],
                     "Développement web" => Event::CATEGORIES[2],
-                ]
+                ],
+                "expanded" => true,
             ])
         ;
     }

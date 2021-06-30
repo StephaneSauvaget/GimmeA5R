@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <title>{% block title %}GimmeA5R{% endblock %}</title>
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
@@ -25,7 +25,7 @@
         {% endfor %}
         {% endblock %}
         {% block header %}
-            {% if app.request.attributes.get('_route') != '/' %}
+            {% if app.request.attributes.get('_route') != 'app_login' %}
                 <div class="user-header">
                     <img src="{{ asset('images/logo_white_large.png') }}">
                     <div class="user-header__link">
@@ -45,6 +45,14 @@
                             <a href="{{ path("sent") }}">Eléments envoyés</a>
                         </div>
                     </div>
+                    <div class="tchat"></div>
+                    {% if app.request.attributes.get('_route') == 'user' %}
+                        <div class="burger-icone">
+                            <div class="line line1"></div>
+                            <div class="line line2"></div>
+                            <div class="line line3"></div>
+                        </div>
+                    {% endif %}
                 </div>
             {% endif %}
             {% if app.user %}

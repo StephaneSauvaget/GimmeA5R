@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  */
 class Event
 {
-    public const LOCATIONS = ["Barcelona", "Bordeaux", "Bruxelles", "Casablanca", "Melbourne", "Nice", "Online", "Paris", "Toulouse"];
+    public const LOCATIONS = ["Barcelona", "Casablanca", "Melbourne", "Online", "Paris", "Toulouse"];
     public const CATEGORIES = ["Cyber-sécurité", "Data", "Développement web"];
     /**
      * @ORM\Id
