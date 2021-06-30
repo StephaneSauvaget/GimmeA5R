@@ -4,48 +4,55 @@ namespace App\Entity;
 
 use App\Repository\EventRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=EventRepository::class)
  */
 class Event
 {
+    public const LOCATIONS = ["Barcelona", "Casablanca", "Melbourne", "Online", "Paris", "Toulouse"];
+    public const CATEGORIES = ["Cyber-sécurité", "Data", "Développement web"];
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private $id;
+    private int $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $name;
+    private string $name;
 
     /**
      * @ORM\Column(type="text")
      */
-    private $resume;
+    private string $resume;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\Choice(choices=Event::LOCATIONS, message="Choisissez une ville.")
      */
-    private $city;
+    private string $city;
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Assert\NotBlank()
+     * @Assert\Choice(choices=Event::CATEGORIES, message="Choisissez une catégorie valide.")
      */
-    private $category;
+    private string $category;
 
     /**
      * @ORM\Column(type="text")
      */
-    private $link;
+    private string $link;
 
     /**
      * @ORM\Column(type="datetime", nullable=true)
      */
-    private $date;
+    private \DateTimeInterface $date;
 
     public function getId(): ?int
     {
