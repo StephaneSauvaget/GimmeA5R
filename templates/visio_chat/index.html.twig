@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello VisioChatController!{% endblock %}
+
+{% block body %}
+<html>
+  <body>
+
+    <p>
+    <button id="start">Démarrer la conversation</button>
+    </p>
+    <h2>Réception<h2>
+    <video id="emitter-video" witdh="100%" heigth="400px"></video>
+    <h2>Emission</h2>
+    <video id="receiver-video" witdh="100%" heigth="400px"></video>
+    
+    <script>
+
+document.querySelector("#start").addEventListener('click', function(e){
+    navigator.getUserMedia({
+        audio:true,
+        video:true,
+    }, function (stream) {
+        let receiverVideo = document.querySelector('#receiver-video')
+        receiverVideo.srcObject = stream;
+        receiverVideo.play()
+
+        let emitterVideo = document.querySelector('#emitter-video')
+        emitterVideo.srcObject = stream;
+        emitterVideo.play()
+    }, function () {})
+})
+
+</script>
+{% block javascripts %}
+{% endblock %}
+  </body>
+</html>
+{% endblock %}

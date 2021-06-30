@@ -26,16 +26,16 @@ body {
 
 #logout-link {
     padding: 0.5%;
-    position: fixed;
-    top: 21%;
-    right: 3%;
+    position: absolute;
+    top: 122%;
+    right: 5.5%;
     text-decoration: none;
     font-size: 2.4rem;
     color: var(--green);
     border: 2px solid var(--green);
     border-radius: 40px;
     transition: all 0.6s ease;
-    z-index: 100;
+    z-index: 200;
 }
 
 #logout-link:hover {
@@ -43,21 +43,120 @@ body {
     background-color: var(--green);
 }
 
+#title-send-container {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title-send {
+    text-align: center;
+    width: 30%;
+}
+
+.container-send {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.login-input-send {
+    border-radius: 40px;
+    border: 2px solid var(--green);
+    width: 45%;
+    height: 50%;
+    font-size: 3.2rem;
+    color: var(--black);
+    margin: 0 auto;
+}
+
+.send-block-bottom {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bottom--end-message {
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid var(--green);
+    width:20%;
+    height: 12%;
+    font-size: 3.2rem;
+    color: var(--black);
+    text-align: center;
+    text-decoration: none;
+    margin-right: 4%;
+}
+
+form #messages div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#messages input {
+    margin-left: 6rem;
+    width: 25%;
+}
+
+#messages textarea {
+    width:25%;
+}
+
+#messages select {
+    width: 25%;
+    margin-right: 0.4rem;
+}
+
+#messages_envoyer {
+    outline: none;
+    border-radius: 40px;
+    border: 2px solid var(--green);
+    width:70%;
+    height: 12%;
+    font-size: 3.2rem;
+    color: var(--black);
+    text-align: center;
+    text-decoration: none;
+    margin-right: 4%;
+}
+
+.wrapper {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-decoration: none;
+}
+
+.one a {
+    text-decoration: none;
+}
+
+
 /*========== USER HEADER ==========*/
 /*=================================*/
 /*=== FOR ALL ROUTES UNLESS '/' ===*/
 
 .user-header {
     height: 15vh;
+    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: var(--green);
     position: relative;
 }
 
+.links-row {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .user-header img {
-    margin-left: 3%;
     width: 22%;
     height: auto;
     
@@ -86,70 +185,6 @@ body {
     width: 100%;
 }
 
-.tchat {
-    width: 20%;
-    height: 85%;
-    margin-right: 3%;
-}
-
-.tchat a {
-    text-decoration: none;
-    color: var(--white);
-    transition: color 0.5s ease;
-    font-size: 3.8rem;
-    position: relative;
-    margin-right: 30px;
-}
-
-.tchat a::before {
-    content: '';
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 0%;
-    height: 3px;
-    background-color: var(--white);
-    transition: 0.7s width ease;
-}
-
-.tchat a:hover::before {
-    width: 100%;
-}
-
-.tchat .dropdown-button {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-
-    
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: center;
-    font-size:x-large;
-}
-
-.tchat:hover .dropdown-content {
-    display: block;
-}
-
 .button-send-message {
     margin-top: 30px;
     outline: none;
@@ -163,6 +198,17 @@ body {
     text-decoration: none;
 }
 
+.messagerie {
+    display: block;
+    width: 100%;
+    position: fixed;
+    background-color: var(--green);
+    top: 85vh;
+}
+
+.messagerie::before {
+    content: none;
+}
 /*========== LOGIN PAGE ==========*/
 /*================================*/
 
@@ -298,6 +344,10 @@ body {
     text-align: center;
     font-weight: 400;
     margin-bottom: 3.2rem;
+}
+
+.event-form-container h2:first-child {
+    margin-top: 5.6rem;
 }
 
 .event-form-container h2:nth-child(2) {
@@ -454,6 +504,10 @@ body {
 }
 
 @media screen and (max-width: 1300px) {
+    /* Header*/
+    .user-header__link a {
+        font-size:4rem;
+    }
     /*Login Page*/
     .login-input {
         width: 55%;
@@ -529,12 +583,27 @@ body {
 }
 
 @media screen and (max-width: 960px) {
+    /*Header*/
+
+    .links-row {
+        justify-content: flex-start;
+    }
+
+    .user-header img {
+        margin: 0 2.4rem;
+    }
+
+    .user-header__link a {
+        font-size: 2.4rem;
+        margin: 0 2.4rem;
+    }
     /*User Page*/
     /*===== BURGER FOR /user =====*/
 
     .burger-icone {
         position: absolute;
-        top: 42%;
+        margin-left: 3%;
+        top: 35%;
         right: 5%;
         width: 4rem;
         height: 3.2rem;
@@ -625,14 +694,6 @@ body {
         display: none;
     }
 
-    #logout-link {
-        position: fixed;
-        top: 20vh;
-        right: 4%;
-        background-color: var(--green);
-        color: var(--white);    
-    }
-
     .user-bloc-top {
         display: block;
         margin-left: 2.4rem;
@@ -649,6 +710,10 @@ body {
     .third-div {
         display: none;
     }
+
+    a .bottom--end-message {
+        width: 30%;
+    }
 }
 
 /*========== TABLETS & IPHONES ==========*/
@@ -660,7 +725,7 @@ body {
         width: 40%;
     }
 
-    .login-header__link a {
+    .login-header__link a:last-child {
         font-size: 3.2rem;
         margin-right: 3%;
     }
@@ -679,10 +744,6 @@ body {
     /*===========*/
     .user-header img {
         width: 20%;    
-    }
-
-    .user-header__link a {
-        font-size: 3.2rem;
     }
 
     .tchat {
@@ -742,7 +803,7 @@ body {
     }
 
     .user-header__link a {
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .tchat {

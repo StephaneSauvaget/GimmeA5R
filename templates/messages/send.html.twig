@@ -1,6 +1,15 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-    <h1> Envoyez un message </h1>
-    {{ form(form) }}
+    <div id="title-send-container">
+        <h1 class ="title-send"> Envoyez un message </h1>
+    </div>
+    <div class ="container-send">
+        <div class="login-input-send"> 
+            {{ form(form) }}
+         </div>
+    </div>
+    <div class="send-block-bottom">
+        <a class ="bottom--end-message" href="{{ path("messages") }}">Retour à la boîte de réception</a>
+    </div>
 {% endblock %}
